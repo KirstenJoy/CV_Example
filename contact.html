@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact us</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <!--This is an form that allows the user to enter information in the input and send the form through email.-->
+    <form action="mailto:20201755@itptstudent.co.uk" enctype="text/plain" method="post">
+        <h1> Please fill in the Contact Form</h1>
+        <!--Main input information-->
+        <label for="first">First Name: </label>
+        <input type="text" name="first-name" id="first" required placeholder="First Name">
+        <br>
+        <br>
+        <label for="second">Seconde Name: </label>
+        <input type="text" name="second-name" id="second" required placeholder="Second Name">
+        <br>
+        <br>
+        <label for="email">Email: </label>
+        <input type="email" name="Email Address" id="email" required placeholder="Email Address">
+        <br>
+        <br>
+        <label for="subject">Select Subject</label>
+        <br>
+        <select name="subject" id="subject">
+            <option value="" selected="selected" disabled></option>
+            <option value="website">Website</option>
+            <option value="general">General</option>
+        </select>
+        <br>
+        <br>
+        <label for="datetime">Pick date and time to contacted back on</label>
+        <br>
+        <input type="datetime-local" name="datetime" id="datetime" required>
+        <br>
+        <br>
+        <label for="textare">Enter your message</label>
+        <br>
+        <textarea name="" id="textare" cols="30" rows="10" required placeholder="Message"></textarea>
+        <br>
+        <br>
+
+        <button type="submit">Send </button>
+
+    </form>
+    <!--To go back to the index page-->
+    <p><a href="index.html">Click to go Back to CV Page</a></p>
+</body>
+
+</html>
